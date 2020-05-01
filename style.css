@@ -1,0 +1,151 @@
+/*-----Конфиг-----*/
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+   outline: none;
+}
+
+/*-----Переменные-----*/
+:root {
+   --input-width: 70px;
+}
+
+/*====================================================*/
+
+body {
+   margin: 0;
+   display: block;
+   background-color: #14202b;
+}
+
+.container {
+
+}
+
+.dopMargin {
+   margin-right: 10px;
+}
+
+/*--- Верхняя форма ввода ---*/
+
+.TopForm {
+   position: relative;
+   padding: 5px;
+   background-color: #274655;
+}
+
+.inputDiv {
+   display: inline-block;
+   margin-left: 5px;
+   alignment: top;
+}
+
+
+.inputLabel {
+   background-color: rgba(255, 255, 255, 0.0);
+
+   color: #e5f8f7;
+   font-family: Calibri, serif;
+   font-size: 14px;
+   text-align: center;
+
+   display: inline-block;
+   width: var(--input-width);
+   height: 20px;
+}
+
+.inputField {
+
+   background-color: rgba(255, 255, 255, 0.2);
+
+   color: #e5f8f7;
+
+   border-style: solid;
+   border-color: rgba(255, 255, 255, 0.4);
+   border-width: 1px;
+   border-radius: 3px;
+
+   text-align: center;
+   width: var(--input-width);
+   height: 20px;
+}
+
+.inputField:hover {
+   border-color: rgba(150, 255, 150, 0.9);
+}
+
+.inputField:focus {
+   background-color: rgba(190, 255, 190, 0.2);
+}
+
+
+.inButton {
+
+   background-color: rgba(200, 255, 255, 0.5);
+   color: #44161b;
+
+   border-style: solid;
+   border-color: rgba(255, 255, 255, 0.6);
+   border-width: 0px;
+   border-radius: 3px;
+
+   width: 90px;
+   height: 25px;
+   margin-left: 5px;
+
+
+}
+
+.inButton:hover {
+   background-color: rgba(200, 255, 255, 0.7);
+}
+
+
+.txtAreaDiv {
+   position: relative;
+   background-color: #14202b;
+   padding: 10px;
+
+}
+
+.txtArea {
+
+   min-height: 200px;
+   max-height: 400px;
+
+
+   resize: vertical;
+   background-color: rgba(255, 255, 255, 0.2);
+   color: #f1e5dd;
+   font-family: Calibri, serif;
+   font-weight: lighter;
+   font-size: 16px;
+
+   border-style: solid;
+   border-color: rgba(255, 255, 255, 0.4);
+   border-width: 1px;
+   border-radius: 3px;
+
+
+}
+
+.txtArea:hover {
+   background-color: rgba(255, 255, 255, 0.25);
+   border-color: rgba(255, 200, 150, 0.8);
+}
+
+
+.pos {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+#outTxt {
+   margin-top: 5px;
+   min-height: 400px;
+   max-height: 600px;
+}

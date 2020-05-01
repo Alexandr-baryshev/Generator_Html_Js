@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Генератор</title>
+   <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="container">
+   <form class="TopForm">
+
+      <div class="inputDiv">
+         <label class="inputLabel" for="R_Start">R начало</label> <br>
+         <input type="number" class="inputField" id="R_Start" value="1">
+      </div>
+
+      <div class="inputDiv dopMargin">
+         <label class="inputLabel" for="R_Size">R размер</label><br>
+         <input type="number" class="inputField" id="R_Size" value="1">
+      </div>
+
+      <div class="inputDiv">
+         <label class="inputLabel" for="C_Start">C начало</label><br>
+         <input type="number" class="inputField" id="C_Start" value="1">
+      </div>
+
+      <div class="inputDiv dopMargin">
+         <label class="inputLabel" for="C_Size">C размер</label><br>
+         <input type="number" class="inputField" id="C_Size" value="1">
+      </div>
+
+
+      <div class="inputDiv dopMargin">
+         <label class="inputLabel" for="RC_pri">Приоритет</label><br>
+         <input type="text" class="inputField" id="RC_pri" placeholder="R / C">
+      </div>
+
+
+      <button class="inButton" type="button" onclick="start()">Старт</button>
+
+   </form>
+
+   <div class="txtAreaDiv pos">
+      <textarea class="txtArea" id="inTxt" placeholder="Ввести значение переменой или R1 C1"></textarea>
+      <textarea class="txtArea" readonly id="outTxt" placeholder="Вывод результата"></textarea>
+   </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
